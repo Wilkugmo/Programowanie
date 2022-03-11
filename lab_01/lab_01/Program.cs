@@ -2,25 +2,31 @@
 
 namespace lab_01
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(new Ulamek());
+            Console.WriteLine();
         }
     }
     public class Ulamek
     {
-        private int licznik;
-        public int Licznik
-        {
-            get
-            {
-                return licznik;
-            }
-            set { }
-        }
+        //private int licznik;
+        // public int Licznik
+        // {
+        //     get
+        //     {
+        //         return licznik;
+        //     }
+        //     set { }
+        // }
 
+        private int licznik;
+        public Licznik(int licznik)
+        {
+            this.licznik = licznik;
+        }
         private int mianownik;
         public int Mianownik
         {
@@ -31,11 +37,8 @@ namespace lab_01
             set { }
         }
 
-        //private strin;
         public Ulamek()
         {
-            //  this.domyslny = "";
-
             this.licznik = 0;
             this.mianownik = 1;
         }
@@ -51,7 +54,15 @@ namespace lab_01
             this.licznik = c.licznik;
             this.mianownik = c.mianownik;
         }
-
+        public override string ToString()
+        {
+            return ;
+                //Tuple.Create( , );
+        }
     }
 
+
+
+
 }
+//https://dirask.com/posts/WSEI-2021-2022-lato-labN-1-ISN-Programowanie-obiektowe-lab-1-pa3ek1
